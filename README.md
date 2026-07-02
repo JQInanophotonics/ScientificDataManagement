@@ -64,10 +64,6 @@ Read the pages in order the first time; use them as a checklist afterwards.
 
 **`svgs/`** collects those exports (main text at the top level, supplementary in `SupMats/`). They are the handoff to Illustrator for labels and layout — never hand-edit data curves there.
 
-### Reference example
-
-[`JQInanophotonics/2025-PaperData-OctaveSelfKIS`](https://github.com/JQInanophotonics/2025-PaperData-OctaveSelfKIS) — the data repo for our octave self-KIS paper currently in review at *Nature*. It follows every convention in this wiki and is the template to imitate. See the [annotated walkthrough](PaperData/Example-OctaveSelfKIS.md).
-
 ## See also
 
 Sibling wikis in the org: [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting), [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations), [ScientificGraphicDesign](https://github.com/JQInanophotonics/ScientificGraphicDesign).
