@@ -59,6 +59,6 @@ Every figure the notebook produces is exported as an SVG here (main text at the 
 
 ## `pyprettyplot/`
 
-The lab plotting package (fonts, `matplotlibrc`, colors, and helper functions that produce Illustrator-ready figures). It will be provided to you and **using it is mandatory**. Copy the package folder directly into the repo root so a clone is self-contained — no "install my other repo first" step for referees. See [04 — Figures & notebook](04-FiguresAndNotebook.md).
+The lab plotting package (fonts, `matplotlibrc`, colors, and helper functions that produce Illustrator-ready figures). The canonical version lives in [ScientificGraphicDesign/Plotting/pyprettyplot](https://github.com/JQInanophotonics/ScientificGraphicDesign/tree/main/Plotting/pyprettyplot) and **using it is mandatory**. Copy the package folder from there directly into the repo root so a clone is self-contained — no "install my other repo first" step for referees. See [04 — Figures & notebook](04-FiguresAndNotebook.md).
 
 Next: [03 — Data files](03-DataFiles.md)

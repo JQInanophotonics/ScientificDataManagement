@@ -15,9 +15,9 @@ Existing examples: `2025-PaperData-OctaveSelfKIS`, `2024-PaperData-KisMultiDKS`,
 
 Keep the repo **private** during preparation and peer review. It becomes **public when the paper is published** — this is what the "Data availability" statement of the paper will point to, so write everything assuming it will be read by strangers.
 
-## Git LFS — do this first
+## Git LFS — set it up at repo creation
 
-CSV data, SVG figures, and notebooks bloat a plain git history very quickly. **Before committing anything**, install and configure [Git LFS](https://git-lfs.com):
+The data files themselves are small (processed data, see [03](03-DataFiles.md)), so LFS is not about the CSVs — it is there for the files that don't diff well and can grow (SVG exports, `.ai`, notebooks, `.ftr`). Since `.gitattributes` must exist **before** those files are first added, set it up when creating the repo and forget about it. Install [Git LFS](https://git-lfs.com):
 
 ```bash
 git lfs install
@@ -50,5 +50,17 @@ Keep it minimal — only local clutter:
 - Commit as you work, not in one giant dump at submission time.
 - Messages are short and name the figure or dataset touched: `Wafer robust data`, `Update data for CEO tracking with RR`, `Rearange and tidy up notebook`.
 - The history then doubles as a log of how the paper's figures evolved.
+
+## Tag each submission round
+
+When the manuscript goes out, tag the repo — plain git tags, nothing else needed:
+
+```bash
+git tag v1-submitted     # initial submission
+git tag v2-revision      # after responding to referees
+git tag v3-published     # version of record
+```
+
+This way the exact dataset and figures each referee saw stay recoverable forever, even as the repo keeps evolving during review.
 
 Next: [02 — Folder structure](02-FolderStructure.md)

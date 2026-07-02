@@ -2,7 +2,7 @@
 
 ## What goes in: processed, plot-ready data
 
-The repo holds the **reduced data behind the figures**, not the raw acquisition output.
+The repo holds the **reduced data behind the figures**, not the raw acquisition output. Because it is processed data, it should **not** be heavy — if a file is large, you probably haven't reduced it enough.
 
 - ✅ CSV files with a header row of named columns, loadable with a single `pd.read_csv()`.
 - ✅ Simulation outputs reduced to the arrays actually plotted (`Mu_vs_Dint.csv`, `eigval_selfKIS_120525.csv`).
@@ -22,6 +22,19 @@ Lc,G,W,freq,Qc,eta                    # coupling Q: geometry params + extracted 
 ```
 
 Use SI base units (Hz, not THz) in the data; convert for display in the notebook. When a table has natural keys (geometry parameters, mode number), store them as columns so the file can be indexed with `index_col=[...]`.
+
+## Format: `.csv` by default, `.ftr` (feather) when heavy
+
+**Everything should be `.csv`.** Plain text, human-readable, opens anywhere, loads with a single `pd.read_csv()`.
+
+If the data are genuinely large and the CSV becomes heavy (tens of MB), do **not** commit a bloated CSV — switch that file to a pandas-compatible binary format, in particular **feather** (`.ftr`), to keep the repo light:
+
+```python
+df.to_feather("./Data/FigNTopic/BigDataset.ftr")        # write once
+df = pd.read_feather("./Data/FigNTopic/BigDataset.ftr") # load in the notebook
+```
+
+Feather keeps the column names and types and is much smaller and faster than CSV for large tables. The same naming rules apply — only the extension changes. Treat it as the exception, though: if you find yourself reaching for `.ftr` often, first ask whether the data are actually reduced enough.
 
 ## Filenames are self-describing
 

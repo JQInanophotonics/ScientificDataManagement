@@ -36,9 +36,10 @@ Rules:
 
 ## `pyprettyplot` — mandatory
 
-All plotting goes through `pyprettyplot`, the lab plotting package. It bundles the fonts, `matplotlibrc`, colors, and helper functions that make figures come out **ready for SVG export and final assembly in Adobe Illustrator**, consistent across everyone in the group. It will be provided to you — you don't write your own styling, and you don't restyle figures by hand.
+All plotting goes through [`pyprettyplot`](https://github.com/JQInanophotonics/ScientificGraphicDesign/tree/main/Plotting/pyprettyplot), the lab plotting package. It bundles the fonts, `matplotlibrc`, colors, and helper functions that make figures come out **ready for SVG export and final assembly in Adobe Illustrator**, consistent across everyone in the group. You don't write your own styling, and you don't restyle figures by hand.
 
-- Copy the package folder into the repo root (vendored, so a fresh clone reproduces the figures with no extra install).
+- The canonical version lives in [`ScientificGraphicDesign/Plotting/pyprettyplot`](https://github.com/JQInanophotonics/ScientificGraphicDesign/tree/main/Plotting/pyprettyplot) — that repo also has an [example notebook and dataset](https://github.com/JQInanophotonics/ScientificGraphicDesign/tree/main/Plotting) showing how to use it.
+- Copy the package folder from there into the repo root (vendored, so a fresh clone reproduces the figures with no extra install).
 - The notebook starts with a single setup cell:
 
   ```python
@@ -67,4 +68,4 @@ The SVGs are the handoff point to final figure assembly (labels, layout, schemat
 2. Every figure in the current manuscript draft has a corresponding section.
 3. No absolute paths, no references to files outside the repo.
 
-Next: the annotated [example walkthrough](Example-OctaveSelfKIS.md).
+Next: [05 — README template](05-ReadmeTemplate.md)
