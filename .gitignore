@@ -1,0 +1,5 @@
+.DS_Store
+.claude/
+
+# Walkthrough of unpublished work — do not commit until the paper is published
+PaperData/Example-OctaveSelfKIS.md
