@@ -1,14 +1,24 @@
-# Scientific Data Management
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"/><img src="assets/header.svg" width="97%" alt="Scientific Data Management"/></picture>
+
+<a href="#pages"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/PAGES-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/PAGES-ffffff?style=flat-square&logoColor=1a1a1a" alt="Pages"/></picture></a>
+<a href="https://github.com/JQInanophotonics/ScientificGraphicDesign"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GRAPHIC%20DESIGN-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/GRAPHIC%20DESIGN-ffffff?style=flat-square&logoColor=1a1a1a" alt="ScientificGraphicDesign"/></picture></a>
+<a href="https://github.com/JQInanophotonics/ScientificWriting"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/WRITING-0d1117?style=flat-square&logoColor=ffffff"/><img src="https://img.shields.io/badge/WRITING-ffffff?style=flat-square&logoColor=1a1a1a" alt="ScientificWriting"/></picture></a>
+
+</div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-forewords.svg"/><img src="assets/banner-forewords.svg" width="97%" alt="Forewords"/></picture>
 
 How we store and tidy data in the group — from the day it is measured to the day the paper is published. Two sections: the day-by-day handling of experimental data, and the packaging of data behind submitted/published papers.
 
-## 1. Daily experimental data *(in progress)*
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-daily-data.svg"/><img src="assets/banner-daily-data.svg" width="97%" alt="Daily Experimental Data"/></picture>
 
-Storing and tidying experimental data **day by day** as it comes off the setups: where it goes, how it is named, how it stays findable months later. This section lives in [`DailyData/`](DailyData/) and is being written — check back soon.
+*(in progress)* Storing and tidying experimental data **day by day** as it comes off the setups: where it goes, how it is named, how it stays findable months later. This section lives in [`DailyData/`](DailyData/) and is being written — check back soon.
 
-## 2. Paper data — storing & tidying data of published work
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-paper-data.svg"/><img src="assets/banner-paper-data.svg" width="97%" alt="Paper Data"/></picture>
 
-Every paper from the group gets its **own GitHub repository** in the `JQInanophotonics` organization, containing the processed data, the notebook that regenerates every figure, and the figure outputs. The goal is simple:
+Storing & tidying data of published work. Every paper from the group gets its **own GitHub repository** in the `JQInanophotonics` organization, containing the processed data, the notebook that regenerates every figure, and the figure outputs. The goal is simple:
 
 > **Anyone — a referee, a new student, or you in five years — should be able to clone the repo, run the notebook top to bottom, and regenerate every figure of the paper.**
 
@@ -64,6 +74,6 @@ Read the pages in order the first time; use them as a checklist afterwards.
 
 **`svgs/`** collects those exports (main text at the top level, supplementary in `SupMats/`). They are the handoff to Illustrator for labels and layout — never hand-edit data curves there.
 
-## See also
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/banner-see-also.svg"/><img src="assets/banner-see-also.svg" width="97%" alt="See Also"/></picture>
 
 Sibling wikis in the org: [ScientificWriting](https://github.com/JQInanophotonics/ScientificWriting), [ScientificPresentations](https://github.com/JQInanophotonics/ScientificPresentations), [ScientificGraphicDesign](https://github.com/JQInanophotonics/ScientificGraphicDesign).
